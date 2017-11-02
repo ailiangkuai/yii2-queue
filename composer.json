@@ -1,0 +1,22 @@
+{
+  "name": "ailiangkuai/yii2-queue",
+  "description": "httpsqs，redis队列",
+  "type": "yii2-extension",
+  "license": "GPL2.0",
+  "authors": [
+    {
+      "name": "ai凉快",
+      "email": "ailiangkuai@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "yiisoft/yii2": ">=2.0.6",
+    "yiisoft/yii2-redis": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ailiangkuai\\yii2\\queue\\": "src/"
+    }
+  }
+}
