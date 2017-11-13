@@ -73,7 +73,7 @@ class RedisQueue extends Queue
 
     public function putValue($key, $value)
     {
-        $this->redis->executeCommand('LPUSH', [$key, $value]);
+        return (bool)$this->redis->executeCommand('LPUSH', [$key, $value]);
     }
 
     public function getValue($key)
